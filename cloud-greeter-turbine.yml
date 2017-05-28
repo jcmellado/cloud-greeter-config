@@ -1,0 +1,23 @@
+
+server:
+  port: 8102
+      
+spring:
+  application:
+    name: cloud-greeter-turbine
+
+turbine:
+  aggregator:
+    clusterConfig: CLOUD-GREETER-API
+  appConfig: cloud-greeter-api
+
+eureka:  
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8101/eureka/
+
+logging:
+  file: logs/${spring.application.name}.log
+  level:
+    org.springframework.cloud: DEBUG
+    com.inmensia: DEBUG
