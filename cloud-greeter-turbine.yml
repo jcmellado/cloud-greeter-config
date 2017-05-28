@@ -2,10 +2,6 @@
 server:
   port: 8102
       
-spring:
-  application:
-    name: cloud-greeter-turbine
-
 turbine:
   aggregator:
     clusterConfig: CLOUD-GREETER-API

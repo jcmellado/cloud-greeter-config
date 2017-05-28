@@ -2,10 +2,6 @@
 server:
   port: ${CLOUD_GREETER_API_PORT}
 
-spring:
-  application:
-    name: cloud-greeter-api
-
 eureka:  
   client:
     serviceUrl:

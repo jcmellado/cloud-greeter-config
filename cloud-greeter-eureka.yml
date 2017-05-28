@@ -2,10 +2,6 @@
 server:  
   port: 8101
 
-spring:
-  application:
-    name: cloud-greeter-eureka
-
 eureka:
   instance:
     hostname: localhost
